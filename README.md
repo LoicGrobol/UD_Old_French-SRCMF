@@ -134,15 +134,15 @@ especially took in charge the validation of the corpus through the successive st
 A significant review of this initial release has been done on the occasion of the UD 2.6 release by
 Loïc Grobol and Sophie Prévost in the frame of the [ANR PROFITEROLE
 project](https://www.lattice.cnrs.fr/projets/projet-anr-profiterole) in order to improve the
-compliance of the corpus to the universal guidelines. This includes both automatic corrections using
-the graph-rewriting system [GREW](http://grew.fr) and extensive manual corrections.
+compliance of the corpus to UD guidelines. This includes both automatic corrections using
+the graph rewriting system [GREW](http://grew.fr) (Bonfante et al., 2018) and extensive manual corrections.
 
 ## References
 
-- Stein, A. et Prévost, S. 2013. Syntactic annotation of medieval texts : the Syntactic Reference
-  Corpus of Medieval French (SRCMF). In P. Bennett, M. Durrell, S. Scheible and R. Whitt (éds) New
-  Methods in Historical Corpus Linguistics, Corpus Linguistics and International Perspectives on
-  Language, CLIP Vol. 3. Tübingen: Narr., p. 75-82. [halshs-01122079]
+- Stein, Achim, and Sophie Prévost. 2013. [‘Syntactic Annotation of Medieval Texts: The Syntactic Reference Corpus of Medieval French (SRCMF)’](https://halshs.archives-ouvertes.fr/halshs-01122079). In *New Methods in Historical Corpora*, edited by Paul Bennett, Martin Durrell, Silke Scheible, and Richard J. Whitt, 275–82. Corpus Linguistics and International Perspectives on Language. Gunter Narr Verlag.
+- Bonfante, Guillaume, Bruno Guillaume, and Guy Perrier 2018. [*Application of Graph Rewriting to Natural Language Processing*](https://hal.inria.fr/hal-01814386.). Vol. 1. ISTE Wiley.
+
+
 
 # Changelog
 

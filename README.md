@@ -60,7 +60,6 @@ One text (Lapidaire) is represented only in Dev/Test but not in train.
 Pre-1100 texts are only in Train, because they seem too small to reserve anything for testing.
 The rest of the data (136 021 /170 741 tokens) is for Train corpus.
 
-
 # Deviations from UD
 
 We added some more specific relations (subtypes), either to specify a relation, or in the case of tokens entering a double dependency relation (typically : relative pronouns and  contracted forms) :
@@ -96,19 +95,21 @@ Consult [the language specific documentation](http://universaldependencies.org/f
 
 UD_Old_French-SRCMF results from the conversion of (part of) the SRCMF corpus (Syntactic Reference Corpus of Medieval French [srcmf.org](srcmf.org)).
 
-This conversion was achieved by Aurélie Collomb, in the frame of a internship funded by lab Lattice (Paris, CNRS, ENS & Université Sorbonne Nouvelle Paris 3, PSL & USPC), and supervised by Sophie Prévost, Isabelle Tellier and Kim Gerdes. Marine Courtin achieved the deposit of the files, and especially took in charge the validation of the corpus through the successive steps of the process.
-
 The SRCMF corpus results from the SRCMF project which took place in 2008-2012, funded by the ANR (France) and the DFG (Germany), and supervised by Sophie Prévost and Achim Stein.
 
 The SRCMF project consisted in the manual syntactic annotation of 15 texts (251,000 tokens) from the 9th to 13th C. Part-of-speech tags were for most of them retrieved from the already existing tagging of the texts (stemming from: Base de Français Medieval, Lyon, ENS de Lyon, IHRIM Laboratory [http://txm.bfm-corpus.org]([http://txm.bfm-corpus.org]), and the Nouveau Corpus d'Amsterdam [http://www.uni-stuttgart.de/lingrom/stein/corpus#nca]([http://www.uni-stuttgart.de/lingrom/stein/corpus#nca]))
 
 The contributors to the SRCMF project were: Stein, Achim; Prévost, Sophie; Rainsford, Tom; Mazziotta, Nicolas;  Bischoff Béatrice; Glikman, Julie; Lavrentiev, Alexei; Heiden, Serge; Guillot-Barbance, Céline; Marchello-Nizia, Christiane.
 
+The whole SRCMF corpus (251,000 tokens) was converted into UD dependencies, but only 172,000 tokens have so far undergone a significant checking: the remaining 80,000 tokens will be added to UD_Old_French-SRCMF in a future release.
+
 The conversion from the original SRCMF annotation to the SRCMF-UD annotation was done automatically both for the POS and the syntactic relations, thanks to a set of elaborated rules.
 Some 1,200 syntactic relations left unlabelled were then manually annotated (Sophie Prévost), and significant spot-checking occurred, focusing on potential difficulties (eg. conj relation).
 
-The whole SRCMF corpus (251,000 tokens) was actually automatically converted into UD dependencies, but only 172,000 tokens have so far undergone a significant checking: the remaining 80,000 tokens will be added to UD_Old_French-SRCMF for the next release.
+This conversion was achieved by Aurélie Collomb, in the frame of a internship funded by lab Lattice (Paris, CNRS, ENS & Université Sorbonne Nouvelle Paris 3, PSL & USPC), and supervised by Sophie Prévost, Isabelle Tellier and Kim Gerdes. Marine Courtin achieved the deposit of the files, and especially took in charge the validation of the corpus through the successive steps of the process.
 
+A significant review of this initial release has been done on the occasion of the UD 2.6 release by Loïc Grobol and Sophie Prévost in the frame of the [ANR PROFITEROLE project](https://www.lattice.cnrs.fr/projets/projet-anr-profiterole) in order to improve the compliance of the corpus to the universal guidelines.
+This includes both automatic corrections using the graph-rewriting system [GREW](http://grew.fr) and extensive manual corrections.
 
 ## References
 
@@ -116,6 +117,8 @@ The whole SRCMF corpus (251,000 tokens) was actually automatically converted int
 
 # Changelog
 
+* 2020-05-15 v2.6
+  * Significant bugfix release (more than 9k changed tokens)
 * 2018-04-15 v2.2
   * Initial release
 
